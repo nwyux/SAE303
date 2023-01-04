@@ -26,6 +26,7 @@ Tout d'abord, les graphiques sont visualisables sur un site One Page qui répert
 
 - Le deuxième montre le temps total utilisé par chaque programme pour résoudre tous les puzzles.
 
+- Le troisième affiche un classement général du meilleur solveur en se basant sur son classement des deux premiers graphiques.
 
 ![image](https://user-images.githubusercontent.com/101118381/210597425-6612d409-13e7-4b59-9ee3-fe4a7b74f2dc.png)
 
