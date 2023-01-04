@@ -27,3 +27,11 @@ Tout d'abord, les graphiques sont visualisables sur un site One Page qui répert
 - Le deuxième montre le temps total utilisé par chaque programme pour résoudre tous les puzzles.
 
 
+![image](https://user-images.githubusercontent.com/101118381/210597425-6612d409-13e7-4b59-9ee3-fe4a7b74f2dc.png)
+
+![image](https://user-images.githubusercontent.com/101118381/210597469-a6e4ec6d-4025-4933-b993-4a691774ff1f.png)
+
+![image](https://user-images.githubusercontent.com/101118381/210597513-0d4d1195-4b4a-4bce-80e0-6ef2c5e874ed.png)
+
+![image](https://user-images.githubusercontent.com/101118381/210597546-c0982ed3-c3d0-43e8-acda-472c4b2bfe2d.png)
+
