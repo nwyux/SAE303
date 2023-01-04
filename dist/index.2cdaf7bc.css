@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin-top: 100px;
+  font-family: Montserrat;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+#nbpuzzles {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.pre-header {
+  width: 100%;
+  background-color: #f26849;
+  padding: 30px 40px;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#logo {
+  font-family: Rancho, cursive;
+  font-size: 3rem;
+}
+
+.buttons {
+  float: right;
+}
+
+button {
+  color: #fff;
+  background-color: #f26849;
+  border: 3px solid #f2bea0;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+button:hover {
+  color: #f26849;
+  background-color: #f2bea0;
+}
+
+.cta {
+  color: #f2bea0;
+  width: 40%;
+  margin-left: 11%;
+  padding: 5% 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+canvas {
+  width: 50rem;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #323746;
+  padding: 40px 10%;
+  bottom: 0;
+}
+
+.offers i {
+  color: #f26849;
+  font-size: 3rem;
+}
+
+.primary {
+  justify-content: space-around;
+  display: flex;
+}
+
+.offers a {
+  text-align: left;
+  display: block;
+}
+
+.about {
+  max-width: 25%;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.sho {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

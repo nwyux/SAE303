@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Montserrat;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.pre-header {
+  background-color: #f26849;
+  padding: 30px 40px;
+  position: sticky;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#logo {
+  font-family: Rancho, cursive;
+  font-size: 2rem;
+}
+
+.buttons {
+  float: right;
+  align-items: center;
+}
+
+button {
+  color: #fff;
+  background-color: #f26849;
+  border: 3px solid #f2bea0;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+button:hover {
+  color: #f26849;
+  background-color: #f2bea0;
+}
+
+.cta {
+  color: #f2bea0;
+  width: 40%;
+  margin-left: 11%;
+  padding: 5% 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+canvas {
+  width: 50rem;
+  margin: 50px auto;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #323746;
+  padding: 40px 10%;
+  bottom: 0;
+}
+
+.offers i {
+  color: #f26849;
+  font-size: 3rem;
+}
+
+.primary {
+  justify-content: space-around;
+  display: flex;
+}
+
+.offers a {
+  text-align: left;
+  display: block;
+}
+
+.about {
+  max-width: 25%;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=index.af7f68b6.css.map */
