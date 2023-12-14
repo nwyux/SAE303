@@ -2,7 +2,9 @@ import { Chart } from 'chart.js/auto'
 
 let i = 0;
 
-(async function puzzles() {
+
+
+(async function dimensions () {
 
   const req = new XMLHttpRequest();
   req.addEventListener("load", evt => {
@@ -20,26 +22,27 @@ let i = 0;
     let set = new Set(thirdElementData.map(row => row.name), thirdElementData.map(row => row.status));
     let names = Array.from(set);
 
+    let sett = new Set(thirdElementData.map(row => row.fullname));
+    let fullnames = Array.from(sett);
+    
 
-    function countsolved(name) {
-      let solved = 0
+    function timesolved(name) {
+      let time = 0;
       for (let i = 0; i < thirdElementData.length; i++) {
         let solverName = name;
-        if (thirdElementData[i].status == 'SAT' && thirdElementData[i].name == solverName || thirdElementData[i].status == 'UNSAT' && thirdElementData[i].name == solverName) { solved++ };
+        if (thirdElementData[i].name == solverName) { time = time+Number(thirdElementData[i].time)};
       };
-      let total = solved;
-      // console.log(name, total)
+      let total = time/fullnames.length;
+      // console.log(name,"time", total)
       return total
     }
 
     let tableausolved = []
 
     for (let i = 0; i < names.length; i++) {
-      let solvednumber = countsolved(names[i])
+      let solvednumber = timesolved(names[i])
       tableausolved.push(solvednumber)
     }
-
-    // console.log("tableau solved", tableausolved)
 
     let sorted = tableausolved.slice().sort((a,b) => a-b);
     let sortedNames = [];
@@ -50,15 +53,33 @@ let i = 0;
     // console.log("sorted", sorted)
 
     new Chart(
-      document.getElementById('acquisitions'),
+      document.getElementById('times'),
       {
-        type: 'polarArea',
+        type: 'bar',
         data: {
           labels: sortedNames,
           datasets: [
             {
-              label: 'Nombres de puzzles résolus',
+              label: 'Temps de résolution moyen de tous les puzzles en seconde',
               data: sorted,
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(255, 159, 64, 0.5)',
+                'rgba(255, 205, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(153, 102, 255, 0.5)',
+                'rgba(201, 203, 207, 0.5)'
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)',
+                'rgb(153, 102, 255)',
+                'rgb(201, 203, 207)'
+            ],
             }
           ]
         },
@@ -70,7 +91,7 @@ let i = 0;
             },
             title: {
               display: true,
-              text: 'Le plus grand nombre de puzzles résolus'
+              text: 'Temps de résolution moyen de tous les puzzles'
             }
           }
         },
@@ -79,3 +100,4 @@ let i = 0;
 
   }
 })();
+
