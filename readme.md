@@ -15,4 +15,8 @@ Tout d'abord, les graphiques sont visualisables sur un site One Page qui répert
 
 ## Screenshots
 
-![XCSP23](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![XCSP23 Image 1](image.png)
+
+![XCSP23 Image 2](image-2.png)
+
+![XCSP23 Image 3](image-3.png)
