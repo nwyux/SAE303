@@ -1,0 +1,216 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: whitesmoke;
+  /* margin-top: 3em; */
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+#nbpuzzles {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+/*//////HEADER//////*/
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.pre-header {
+  background-color: #F26849;
+  padding: .4rem 1.2rem;
+  position: fixed;
+  align-items: center;
+  border-radius: 4rem;
+  display: flex;
+  z-index: 1;
+  top: 2%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bx-chevron-down {
+  font-size: 1rem;
+  color: white;
+}
+
+.puzzles {
+  position: absolute;
+  background-color: #f09866;
+  border-radius: .4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  top: 100%;
+  left: 22%;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto; 
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url('https://media.nature.com/lw1024/magazine-assets/d41586-018-02741-4/d41586-018-02741-4_15510344.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  align-items: center;
+  width: 100%;
+  top: 0px;
+}
+
+#logo {
+  font-family: 'Kalnia', cursive;
+  font-size: 1.4rem;
+}
+
+.puzzles button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons {
+  float: right;
+}
+
+button {
+  border: 3px solid #F2BEA0;
+  border-radius: .6rem;
+  padding: .4rem;
+  background-color: #f26849;
+  color: white;
+  font-weight: 600;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F2BEA0;
+  color:#F26849;
+}
+
+/*//////BANNER//////*/
+
+.cta {
+  color: #f09866;
+  font-size: 3rem;
+  font-weight:bold;
+  width: 40%;
+  margin-left: 11%;
+  padding: 5% 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 5% 0; */
+  flex-wrap: wrap;
+}
+
+canvas {
+  margin: auto;
+  padding-bottom: 50px;
+  width: 37rem;
+}
+
+footer {
+  background-color: rgb(50,55,70);
+  color:white;
+  bottom:0px;
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.offers i {
+  font-size: 3rem;
+  color:#F26849;
+}
+
+.primary {
+  display: flex;
+  justify-content: space-around;
+}
+
+.offers a {
+  display: block;
+  text-align: left;
+}
+
+.offers a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  max-width: 25%;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+.copyright a {
+  color: #F26849;
+}
+
+.copyright a:hover {
+  color: #F2BEA0;
+  text-decoration: underline;
+}
+
+.show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+.sho{
+  opacity: 1;
+}
