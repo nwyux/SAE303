@@ -47,7 +47,7 @@ let i = 0;
       let index = tableausolved.indexOf(sorted[i]);
       sortedNames.push(names[index]);
     }
-    console.log("sorted1", sorted)
+    // console.log("sorted1", sorted)
 
 
     function timesolved(name) {
@@ -73,7 +73,7 @@ let i = 0;
       let index = tableau2solved.indexOf(sorted[i]);
       sortedNames2.push(names[index]);
     }
-    console.log("sorted", sorted2)
+    // console.log("sorted", sorted2)
 
     let ranking = [];
     for (let i = 0; i < sorted.length; i++) {
@@ -86,7 +86,7 @@ let i = 0;
     new Chart(
       document.getElementById('rankings'),
       {
-        type: 'bar',
+        type: 'radar',
         data: {
           labels: sortedNames,
           datasets: [

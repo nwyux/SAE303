@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Montserrat';
-  background-color: whitesmoke;
+  background-color: #f1f1f1;
   /* margin-top: 3em; */
 }
 
@@ -21,12 +21,31 @@ i {
   font-size: 2rem;
 }
 
+.separator {
+  border-bottom: 1px solid #f1f1f1;
+  margin: 1rem auto;
+  width: 40%;
+}
+
+.separator2 {
+  border-bottom: 1px solid #f1f1f1;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #nbpuzzles {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: Kalnia;
   font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
-  text-decoration: underline;
   padding: 15px;
 }
 
@@ -88,7 +107,7 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 4rem;
+  padding: 7rem;
   align-items: center;
   width: 100%;
   top: 0px;
@@ -138,11 +157,19 @@ button:hover {
   padding: 5% 0;
 }
 
+.dashboard-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+}
+
 .stats {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* padding: 5% 0; */
   flex-wrap: wrap;
 }
 

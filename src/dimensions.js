@@ -33,7 +33,7 @@ let i = 0;
         if (thirdElementData[i].name == solverName) { time = time+Number(thirdElementData[i].time)};
       };
       let total = time/fullnames.length;
-      console.log(name,"time", total)
+      // console.log(name,"time", total)
       return total
     }
 
@@ -50,7 +50,7 @@ let i = 0;
       let index = tableausolved.indexOf(sorted[i]);
       sortedNames.push(names[index]);
     }
-    console.log("sorted", sorted)
+    // console.log("sorted", sorted)
 
     new Chart(
       document.getElementById('dimensions'),

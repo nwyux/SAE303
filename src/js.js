@@ -19,7 +19,7 @@ export default function time() {
         if (thirdElementData[i].name == solverName) { time = time+Number(thirdElementData[i].time)};
       };
       let total = time/fullnames.length;
-      console.log(name,"time", total)
+      // console.log(name,"time", total)
       return total
     }
 
@@ -36,7 +36,7 @@ export default function time() {
       let index = tableausolved.indexOf(sorted[i]);
       sortedNames.push(names[index]);
     }
-    console.log("sorted", sorted)
+    // console.log("sorted", sorted)
 
 }
 
@@ -52,7 +52,7 @@ export default function nbpuzzles() {
         if (thirdElementData[i].status == 'SAT' && thirdElementData[i].name == solverName || thirdElementData[i].status == 'UNSAT' && thirdElementData[i].name == solverName) { solved++ };
       };
       let total = solved;
-      console.log(name, total)
+      // console.log(name, total)
       return total
     }
 }

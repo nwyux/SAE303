@@ -28,7 +28,7 @@ let i = 0;
         if (thirdElementData[i].status == 'SAT' && thirdElementData[i].name == solverName || thirdElementData[i].status == 'UNSAT' && thirdElementData[i].name == solverName) { solved++ };
       };
       let total = solved;
-      console.log(name, total)
+      // console.log(name, total)
       return total
     }
 
@@ -39,7 +39,7 @@ let i = 0;
       tableausolved.push(solvednumber)
     }
 
-    console.log("tableau solved", tableausolved)
+    // console.log("tableau solved", tableausolved)
 
     let sorted = tableausolved.slice().sort((a,b) => a-b);
     let sortedNames = [];
@@ -47,7 +47,7 @@ let i = 0;
       let index = tableausolved.indexOf(sorted[i]);
       sortedNames.push(names[index]);
     }
-    console.log("sorted", sorted)
+    // console.log("sorted", sorted)
 
     new Chart(
       document.getElementById('acquisitions'),
